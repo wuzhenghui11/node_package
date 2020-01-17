@@ -1,12 +1,13 @@
-;(function(factory) {
+;(function(global, factory) {
+	'use strick'
 	if (typeof define === 'function' && define.amd) {
 		define(factory());
-	} else if (typeof module === 'object' && module.exports) {
-		module.exports = factory();
+	} else if (typeof module === 'object' && typeof module.exports === 'object') {
+		module.exports = factory(global);
 	} else {
-		factory();
+		this.zhModule = factory(global);
 	}
-})(function() {
+})(typeof window !== 'undefined' ? window : this, function(global) {
 	'use strict';
 
 	function isArray(obj) {
