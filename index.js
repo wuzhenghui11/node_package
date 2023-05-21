@@ -1,13 +1,16 @@
 ;(function(global, factory) {
-	'use strick'
+	// typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	// typeof define === 'function' && define.amd ? define(factory) :
+	// (global = global || self, global.w = factory());
+
 	if (typeof define === 'function' && define.amd) {
-		define(factory());
+		define('w', factory());
 	} else if (typeof module === 'object' && typeof module.exports === 'object') {
-		module.exports = factory(global);
+		module.exports = factory();
 	} else {
-		this.zhModule = factory(global);
+		global.zhModule = factory();
 	}
-})(typeof window !== 'undefined' ? window : this, function(global) {
+})(typeof window !== 'undefined' ? window : this, function() {
 	'use strict';
 
 	function isArray(obj) {
