@@ -9,8 +9,8 @@ In Node.js:
 ```js
 var w = require('wzhnodeappwzh');
 var newObj = w.deepCopy({
-	a: {
-		b: 1
+	ob1: {
+		ob2: 1
 	}
 });
 ```
