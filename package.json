@@ -1,6 +1,7 @@
 {
 	"name": "zhzl",
 	"version": "0.0.9",
+	"main": "dist/index.js",
 	"module": "src/index.js",
 	"keywords": [],
 	"author": "wzh",
