@@ -3,6 +3,8 @@
 	"version": "0.0.9",
 	"main": "dist/index.js",
 	"module": "src/index.js",
+	"types": "",
+	"type": "module",
 	"keywords": [],
 	"author": "wzh",
 	"license": "ISC",
@@ -10,7 +12,6 @@
 	"scripts": {
 		"build": "webpack"
 	},
-	"type": "module",
 	"devDependencies": {
 		"lodash": "^4.17.21",
 		"webpack": "^5.88.2",
