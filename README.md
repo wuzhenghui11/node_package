@@ -1,14 +1,14 @@
 ## Installation
 Using npm:
 ```shell
-$ npm i wzhnodeappwzh
-$ npm i --save wzhnodeappwzh
+$ npm i zhzl
+$ npm i --save zhzl
 ```
 
 In Node.js:
 ```js
-var w = require('wzhnodeappwzh');
-var newObj = w.deepCopy({
+var zhzl = require('zhzl');
+var newObj = zhzl.deepCopy({
 	ob1: {
 		ob2: 1
 	}
@@ -16,14 +16,14 @@ var newObj = w.deepCopy({
 ```
 
 ```js
-import w from 'wzhnodeappwzh';
-var newObj = w.deepCopy({
+import zhzl from 'zhzl';
+var newObj = zhzl.deepCopy({
 	a: {
 		b: 1
 	}
 });
 
-window.onresize = w.debounce((event) => {
+window.onresize = zhzl.debounce((event) => {
 	console.log(event)
 }, 250)
 ```

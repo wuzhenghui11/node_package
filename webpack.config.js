@@ -8,12 +8,12 @@ export default (env) => {
   return {
     mode: 'development',
     devtool: 'inline-source-map',
-    entry: './index.js',
+    entry: './src/index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'index.js',
       library: {
-        name: 'wzhnodeappwzh',
+        name: 'zhzl',
         type: 'umd'
       },
       clean: true,

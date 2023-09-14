@@ -1,9 +1,9 @@
 {
-	"name": "wzhnodeappwzh",
+	"name": "zhzl",
 	"version": "0.0.9",
-	"main": "dist/index.js",
+	"module": "src/index.js",
 	"keywords": [],
-	"author": "wuzhenghui",
+	"author": "wzh",
 	"license": "ISC",
 	"description": "mudule learn",
 	"scripts": {
