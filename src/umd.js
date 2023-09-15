@@ -12,5 +12,27 @@
 		global.zhModule = factory();
 	}
 })(typeof window !== 'undefined' ? window : this, function() {
+	function Zhzl() {
+		// const obj = {
+		//   deepCopy,
+		//   debounce,
+		//   throttle,
+		// }
+		// let self
+		// return function () {
 	
+		// }
+	
+		// let self;
+		// if (!(self instanceof Zhzl)) {
+		// 	self = new Zhzl()
+		// }
+		// Zhzl.prototype = {
+		// 	constructor: Zhzl,
+		// 	deepCopy,
+		// 	debounce,
+		// 	throttle,
+		// }
+		// return self
+	}
 })

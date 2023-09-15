@@ -46,29 +46,7 @@ function deepCopy(obj) {
   return newObj;
 }
 
-
 function Zhzl() {
-  // const obj = {
-  //   deepCopy,
-  //   debounce,
-  //   throttle,
-  // }
-  // let self
-  // return function () {
-
-  // }
-
-	// let self;
-	// if (!(self instanceof Zhzl)) {
-	// 	self = new Zhzl()
-	// }
-	// Zhzl.prototype = {
-	// 	constructor: Zhzl,
-	// 	deepCopy,
-	// 	debounce,
-	// 	throttle,
-	// }
-  // return self
 }
 
 Zhzl.prototype = {
