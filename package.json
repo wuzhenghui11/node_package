@@ -1,8 +1,8 @@
 {
 	"name": "zhzl",
 	"version": "0.0.15",
-	"main": "dist/index.js",
-	"module": "src/index.esm.js",
+	"main": "dist/umd/index.js",
+	"module": "dist/esm/index.js",
 	"types": "",
 	"type": "module",
 	"keywords": [],
@@ -13,8 +13,8 @@
 		"build": "webpack && rollup --config"
 	},
 	"exports": {
-    "import": "./dist/index.esm.js",
-    "default": "./dist/index.js"
+    "import": "./dist/umd/index.js",
+    "default": "./dist/esm/index.js"
   },
 	"devDependencies": {
 		"@rollup/plugin-json": "^6.0.0",
