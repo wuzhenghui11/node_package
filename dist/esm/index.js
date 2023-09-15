@@ -76,15 +76,8 @@ Zhzl.prototype = {
   deepCopy,
   debounce,
   throttle,
-}
+};
 
-let zhzl = new Zhzl()
+let zhzl = new Zhzl();
 
-export {
-  isArray,
-  deepCopy,
-  debounce,
-  throttle,
-}
-
-export default zhzl
+export { debounce, deepCopy, zhzl as default, isArray, throttle };

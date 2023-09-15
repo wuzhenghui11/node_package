@@ -10,7 +10,7 @@ export default (env) => {
     devtool: 'inline-source-map',
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'dist/umd/'),
       filename: 'index.js',
       library: {
         name: 'zhzl',
@@ -18,6 +18,7 @@ export default (env) => {
       },
       clean: true,
     },
+    // 外部化lodash
     // externals: {
     //   lodash: {
     //     commonjs: 'lodash',

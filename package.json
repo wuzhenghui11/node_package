@@ -1,8 +1,8 @@
 {
 	"name": "zhzl",
-	"version": "0.0.9",
+	"version": "0.0.15",
 	"main": "dist/index.js",
-	"module": "src/index.js",
+	"module": "src/index.esm.js",
 	"types": "",
 	"type": "module",
 	"keywords": [],
@@ -10,10 +10,16 @@
 	"license": "ISC",
 	"description": "mudule learn",
 	"scripts": {
-		"build": "webpack"
+		"build": "webpack && rollup --config"
 	},
+	"exports": {
+    "import": "./dist/index.esm.js",
+    "default": "./dist/index.js"
+  },
 	"devDependencies": {
+		"@rollup/plugin-json": "^6.0.0",
 		"lodash": "^4.17.21",
+		"rollup": "^3.29.1",
 		"webpack": "^5.88.2",
 		"webpack-cli": "^5.1.4"
 	}
