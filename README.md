@@ -1,11 +1,12 @@
 ## Installation
-Using npm:
+Using npm/pnpm:
 ```shell
-$ npm i zhzl
-$ npm i --save zhzl
+npm i zhzl
+// ---
+pnpm i zhzl
 ```
 
-In Node.js:
+commonjs
 ```js
 var zhzl = require('zhzl');
 var newObj = zhzl.deepCopy({
@@ -14,15 +15,17 @@ var newObj = zhzl.deepCopy({
 	}
 });
 ```
-
+esm
 ```js
-import zhzl from 'zhzl';
+import zhzl, { isArray } from 'zhzl';
 var newObj = zhzl.deepCopy({
 	a: {
 		b: 1
 	}
-});
-
+})
+```
+浏览器
+```js
 window.onresize = zhzl.debounce((event) => {
 	console.log(event)
 }, 250)
