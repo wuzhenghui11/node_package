@@ -1,4 +1,4 @@
-// import _ from 'lodash'
+// import { join } from 'lodash-es'
 function isArray(obj) {
   return Array.isArray(obj);
 }
@@ -51,6 +51,7 @@ function Zhzl() {
 
 Zhzl.prototype = {
   constructor: Zhzl,
+  isArray,
   deepCopy,
   debounce,
   throttle,

@@ -1,9 +1,9 @@
-// import _ from 'lodash'
-function isArray(obj) {
+// import { join } from 'lodash-es'
+export function isArray(obj) {
   return Array.isArray(obj);
 }
 
-function debounce(fn, delay) {
+export function debounce(fn, delay) {
   var timer = null;
   return function() {
     var context = this, args = arguments;
@@ -14,7 +14,7 @@ function debounce(fn, delay) {
   }
 }
 
-function throttle(fn, threshhold, scope) {
+export function throttle(fn, threshhold, scope) {
   threshhold || (threshhold = 250);
   var last, deferTimer;
   return function () {
@@ -34,7 +34,7 @@ function throttle(fn, threshhold, scope) {
   };
 }
 
-function deepCopy(obj) {
+export function deepCopy(obj) {
   var newObj = isArray(obj) ? [] : {};
   for (var item in obj) {
     if (typeof obj[item] === 'object' && obj[item] !== null && !(obj[item] instanceof Date)) {
@@ -51,18 +51,12 @@ function Zhzl() {
 
 Zhzl.prototype = {
   constructor: Zhzl,
+  isArray,
   deepCopy,
   debounce,
   throttle,
 }
 
 let zhzl = new Zhzl()
-
-export {
-  isArray,
-  deepCopy,
-  debounce,
-  throttle,
-}
 
 export default zhzl
